@@ -1,14 +1,19 @@
 module.exports = ({ env }) => ({
-  defaultConnection: 'default',
+  defaultConnection: "default",
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: "mongoose",
       settings: {
-        client: 'sqlite',
-        filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+        host: env("DB_HOST", ""),
+        srv: true,
+        port: 27017,
+        database: env("DB_NAME", ""),
+        username: env("DB_LOGIN", ""),
+        password: env("DB_PASSWORD", ""),
       },
       options: {
-        useNullAsDefault: true,
+        authenticationDatabase: env("AUTHENTICATION_DATABASE", null),
+        ssl: env.bool("DATABASE_SSL", true),
       },
     },
   },
