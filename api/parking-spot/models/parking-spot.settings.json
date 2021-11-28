@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parking_spots",
+  "info": {
+    "name": "Parking spot"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "admin_user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "dateStart": {
+      "type": "datetime"
+    },
+    "dateTo": {
+      "type": "datetime",
+      "required": false
+    },
+    "car": {
+      "model": "car"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "lng": {
+      "type": "string"
+    },
+    "allowContact": {
+      "type": "boolean"
+    }
+  }
+}

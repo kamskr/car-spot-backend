@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/parking-spots",
+      "handler": "parking-spot.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/parking-spots/count",
+      "handler": "parking-spot.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/parking-spots/:id",
+      "handler": "parking-spot.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/parking-spots",
+      "handler": "parking-spot.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/parking-spots/:id",
+      "handler": "parking-spot.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/parking-spots/:id",
+      "handler": "parking-spot.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
