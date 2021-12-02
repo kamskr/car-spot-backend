@@ -64,6 +64,12 @@
     },
     "surname": {
       "type": "string"
+    },
+    "cars": {
+      "collection": "car"
+    },
+    "parking_spots": {
+      "collection": "parking-spot"
     }
   }
 }

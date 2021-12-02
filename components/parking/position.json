@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_parking_positions",
+  "info": {
+    "name": "position",
+    "icon": "map-pin"
+  },
+  "options": {},
+  "attributes": {
+    "lat": {
+      "type": "decimal"
+    },
+    "lng": {
+      "type": "decimal"
+    }
+  }
+}
