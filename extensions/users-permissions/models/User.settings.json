@@ -66,10 +66,12 @@
       "type": "string"
     },
     "cars": {
-      "collection": "car"
+      "collection": "car",
+      "via": "user"
     },
     "parking_spots": {
-      "collection": "parking-spot"
+      "collection": "parking-spot",
+      "via": "user"
     }
   }
 }

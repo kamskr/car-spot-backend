@@ -22,6 +22,15 @@
     },
     "registrationNumber": {
       "type": "string"
+    },
+    "parking_spot": {
+      "via": "car",
+      "model": "parking-spot"
+    },
+    "user": {
+      "via": "cars",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

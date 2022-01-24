@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user"
-    },
     "dateStart": {
       "type": "datetime"
     },
@@ -24,7 +20,8 @@
       "required": false
     },
     "car": {
-      "model": "car"
+      "model": "car",
+      "via": "parking_spot"
     },
     "allowContact": {
       "type": "boolean",
@@ -34,6 +31,11 @@
       "type": "component",
       "repeatable": false,
       "component": "parking.position"
+    },
+    "user": {
+      "via": "parking_spots",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
