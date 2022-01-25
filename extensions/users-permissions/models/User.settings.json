@@ -72,6 +72,9 @@
     "parking_spots": {
       "collection": "parking-spot",
       "via": "user"
+    },
+    "phone": {
+      "type": "string"
     }
   }
 }
